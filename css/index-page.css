@@ -4,6 +4,10 @@ body {
     padding:0;
 }
 
+audio {
+    display: none;
+}
+
 /* Main title wrapper */
 .center-main-title-div {
     position:absolute;
