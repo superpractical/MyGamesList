@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background: #1f2833;
+    padding:0;
+}
+
+/* Main title wrapper */
+.center-main-title-div {
+    position:absolute;
+    bottom:0;
+    top: 40%;
+    width:100%;
+    height:60px;
+}
+
+/* Main title CSS */
+.main-title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: white;
+    margin: 0;
+}
+
+/* Highlight Text in Title */
+.title-highlight-text {
+    color: aqua;
+}
+
+/* CSS for phrase beneath main title */
+.subtitle-text {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    color: white;
+}
+
+/* Enter Button wrapper */
+.enter-button-div {
+    position: absolute;
+    bottom: 0;
+    top: 45%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+/* Enter button CSS */
+.enter-button {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px white solid;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding: 12px;
+    /* width: 200px; */
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 0 auto;
+
+    position: absolute;
+    bottom: 0;
+    top: 120%;
+    left: 40%;
+    height: 60px;
+}
+
+.enter-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.enter-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+
+.enter-button:hover span {
+    padding-right: 25px;
+    color: aqua;
+}
+
+.enter-button:hover {
+    border: 2px aqua solid;
+}
+
+.enter-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Background Animation */
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-position: center center;
+    z-index: 1;
+}
+#large-header {
+    background: #1f2833;
+}
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 22%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+@media only screen and (max-width: 1920px) {
+    .demo-1 .main-title {
+        font-size: 3em;
+    }
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 0px;
+    font-size: 25px;
+    text-align: center;
+    bottom:0;
+    font-weight: bold;
+}
